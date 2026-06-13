@@ -1,0 +1,39 @@
+/* ENTITY-E Neck Decompressor editable V2 overrides */
+
+/* Product detail pictures: clean 1px frame, no heavy navy block */
+.ndl-live .ndl-gallery > div,
+.ndl-live .ndl-box-img{
+  padding:1px!important;
+  border:1px solid #071946!important;
+  background:#071946!important;
+  box-shadow:none!important;
+}
+.ndl-live .ndl-gallery > div > img,
+.ndl-live .ndl-box-img > img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  background:#fff!important;
+  border-radius:22px!important;
+  padding:0!important;
+}
+
+@media(max-width:980px){
+  .ndl-live .ndl-card-row,
+  .ndl-live .ndl-gallery,
+  .ndl-live .ndl-reviews{
+    display:flex!important;
+    overflow-x:auto!important;
+    gap:16px!important;
+    scroll-snap-type:x mandatory!important;
+    -webkit-overflow-scrolling:touch!important;
+    padding-bottom:18px!important;
+    scrollbar-width:none!important;
+  }
+  .ndl-live .ndl-card-row::-webkit-scrollbar,
+  .ndl-live .ndl-gallery::-webkit-scrollbar,
+  .ndl-live .ndl-reviews::-webkit-scrollbar{display:none!important}
+  .ndl-live .ndl-card-row > article,
+  .ndl-live .ndl-gallery > div,
+  .ndl-live .ndl-reviews > article{flex:0 0 min(84vw,390px)!important;scroll-snap-align:start!important}
+}
