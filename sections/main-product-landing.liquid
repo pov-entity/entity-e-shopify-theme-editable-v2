@@ -1,0 +1,15 @@
+<section class="ndl-live">
+  <div class="ndl-wrap">
+    <h1>{{ section.settings.heading }}</h1>
+    <p>{{ section.settings.text }}</p>
+    <a href="{{ section.settings.buy_link }}">Choose package</a>
+  </div>
+</section>
+
+<style>
+.ndl-live{padding:80px 0;background:#fff;color:#071946}.ndl-wrap{width:min(1100px,calc(100% - 32px));margin:0 auto}.ndl-live h1{font-size:clamp(36px,6vw,72px);line-height:1;margin:0 0 16px}.ndl-live a{display:inline-flex;min-height:54px;align-items:center;justify-content:center;background:#071946;color:#fff;border-radius:999px;padding:0 24px;text-decoration:none;font-weight:900}
+</style>
+
+{% schema %}
+{"name":"Product Landing V2","settings":[{"type":"text","id":"heading","label":"Heading","default":"Gentle support after long sitting, driving, reading, or screen time."},{"type":"textarea","id":"text","label":"Text","default":"A simple at-home comfort routine with clear packages and secure checkout."},{"type":"url","id":"buy_link","label":"Buy link"}],"presets":[{"name":"Product Landing V2"}]}
+{% endschema %}
